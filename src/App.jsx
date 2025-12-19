@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Form from './components/Form'
 import Result from './components/Result'
 import './App.css'
-import bg from '../assets/99px_ru_animacii_40833_sozvezdija_na_nochnom_nebe.gif';
+import bg from '/99px_ru_animacii_40833_sozvezdija_na_nochnom_nebe.gif';
 export default function App() {
   const [watchRes, setWatchRes] = useState(false)
   const [inputValue, setInputValue] = useState('')
