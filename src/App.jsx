@@ -19,7 +19,7 @@ export default function App() {
   function onClickSearch(event) {
     event.preventDefault()
     setWatchRes(true)
-    if (inputValue !== '' || inputValue!==undefined) {
+    if (inputValue !== '') {
       data(inputValue)
       // setMsgErr('')
     } else {
