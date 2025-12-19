@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react'
 import Form from './components/Form'
 import Result from './components/Result'
 import './App.css'
+import bg from '../assets/99px_ru_animacii_40833_sozvezdija_na_nochnom_nebe.gif';
 export default function App() {
   const [watchRes, setWatchRes] = useState(false)
   const [inputValue, setInputValue] = useState('')
   const [res, setRes] = useState(null)
   const [error, setError] = useState(false)
+  
   // const [msgErr, setMsgErr] = useState('')
  
   const data = async function(cityname) {
@@ -26,7 +28,7 @@ export default function App() {
 }
   return (
     <>
-      <div className='center'>
+      <div className='center' style={{backgroundImage: `url(${bg})`}}>
         <h2>Weather app</h2>
         <Form getData={(e) => setInputValue(e.target.value)} onClickSearch={onClickSearch} />
         <div className='res'>
