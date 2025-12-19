@@ -12,6 +12,7 @@
   /* background-image: url('./src/99px_ru_animacii_42339_galaktika_vrashaetsja_v_pustote.gif'); */
     /* background-image: url('./src/99px_ru_animacii_43451_na_skalistom_beregu_morja_paren_sidja_na_motocikle.gif'); */
   object-fit: cover;
+  font-size: 1.5em;
 }
 
 .res {

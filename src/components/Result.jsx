@@ -3,14 +3,14 @@ export default function Result({city, temp, weather, max_temp, min_temp, feels_l
     
     return (
         <>
-        <h1>{city}</h1>
-        <h1>{`${temp}°C`}</h1>
-        <div>{weather}</div>
+        <p className='cityName'>{city}</p>
+        <p className='tempTitle'>{`${Math.ceil(temp)}°C`}</p>
+        <span>{weather}</span>
         <div className="maxmintemp">
-            <div>{`${max_temp}°C `}</div>
-            <div>{`${min_temp}°C`}</div>
+            <div>{`Мин.:${Math.ceil(max_temp)}°C `}</div>
+            <div>{`Макс.:${Math.ceil(min_temp)}°C`}</div>
         </div>
-        <div>{`Ощущается как ${feels_like}°C`}</div>
+        <div>{`Ощущается как ${Math.ceil(feels_like)}°C`}</div>
         </>
     )
 }
