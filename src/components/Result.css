@@ -4,3 +4,14 @@
     gap: 20px;
 }
 
+.cityName {
+    font-weight: 700;
+}
+
+.tempTitle {
+    font-size: 2em;
+}
+
+span {
+    color: gray;
+}
